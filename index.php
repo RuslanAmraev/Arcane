@@ -14,7 +14,9 @@
     <!-- <link rel="stylesheet" href="./slick.css"> -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-    <title>Arcane рекламное агенство</title>
+    <title>Агентство по стратегическим и операционным  бизнес услугам - Arcane</title>
+    <meta name="keywords" content="Таргетированная реклама, контекстная реклама, продвижение, маркетинг, Диджитал агентство">
+    <meta name="description" content="Рекламное агенство, таргетированная реклама в Алматы">
 </head>
 <body>
     <?php include('./header.html') ?>
