@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-            menu: null,
-            navigation: false
+            menu: '#switch',
+            navigation: false,
+            anchors: ['main', 'advantages']
         }
     );
 });

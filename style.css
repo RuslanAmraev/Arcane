@@ -1,3 +1,6 @@
+.section{
+    background-color: #232323 !important;
+}
 html{
     background-color: #232323;
     scroll-behavior: smooth;
@@ -176,6 +179,7 @@ html{
     right: 62px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1000;
 }
 
 .switch-item{
@@ -186,9 +190,11 @@ html{
     display: block;
     margin-bottom: 17px;
     cursor: pointer;
+    z-index: 100;
+    transition: .3s;
 }
 
-.switch-item-active{
+.active{
     height: 38px;
     background-color: #0084FF;
     border-radius: 7.5px;
