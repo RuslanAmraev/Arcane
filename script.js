@@ -5,4 +5,5 @@ $(document).ready(function() {
             anchors: ['main', 'advantages']
         }
     );
+    $("#phone").mask("+7(999) 999-9999");
 });

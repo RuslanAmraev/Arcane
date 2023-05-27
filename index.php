@@ -28,10 +28,10 @@
         </div>
     </div>
     <!-- <script src="./jquery.js"></script>
-    <script src="./jquery.maskedinput.min.js"></script>
     <script src="./slick.min.js"></script> -->
     <script src="./jquery.min.js"></script>
     <script type="text/javascript" src="jquery.pagepiling.js"></script>
+    <script src="./jquery.maskedinput.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
