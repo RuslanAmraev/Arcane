@@ -54,7 +54,7 @@ html{
 }
 
 .logo-text{
-    width: 245px;
+    max-width: 420px;
     font-family: 'Montserrat' , sans-serif;
     font-style: normal;
     font-weight: 400;
