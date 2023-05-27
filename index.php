@@ -30,7 +30,7 @@
     <!-- <script src="./jquery.js"></script>
     <script src="./jquery.maskedinput.min.js"></script>
     <script src="./slick.min.js"></script> -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./jquery.min.js"></script>
     <script type="text/javascript" src="jquery.pagepiling.js"></script>
     <script src="./script.js"></script>
 </body>
