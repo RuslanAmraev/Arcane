@@ -7,10 +7,10 @@
     <!-- <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./fonts/bebasneue.css">
+    <link rel="stylesheet" href="./fonts/montserrat.css">
     <!-- <link rel="stylesheet" href="./slick.css"> -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
