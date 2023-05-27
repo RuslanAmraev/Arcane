@@ -5,6 +5,9 @@ html{
 .container{
     padding-left: 139px;
     padding-right: 139px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .flex{
@@ -248,6 +251,7 @@ html{
     width: 489px;
     height: 186px;
     background-color: #fff;
+    padding: 30px;
 }
 
 .report-img{

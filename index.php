@@ -13,16 +13,25 @@
     <link rel="stylesheet" href="./fonts/bebasneue.css">
     <link rel="stylesheet" href="./slick.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
     <title>Arcane рекламное агенство</title>
 </head>
 <body>
     <?php include('./header.html') ?>
-    <?php include('./main.html') ?>
-    <?php include('./advantages.html') ?>
+    <div id="pagepiling">
+        <div class="section">
+            <?php include('./main.html') ?>
+        </div>
+        <div class="section">
+            <?php include('./advantages.html') ?>
+        </div>
+    </div>
     <?php include('./switch.html') ?>
-    <script src="./jquery.js"></script>
+    <!-- <script src="./jquery.js"></script>
     <script src="./jquery.maskedinput.min.js"></script>
-    <script src="./slick.min.js"></script>
+    <script src="./slick.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.pagepiling.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
