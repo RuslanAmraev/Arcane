@@ -76,7 +76,6 @@ html{
 
 .main{
     background-color: #232323;
-    padding-top: 130px;
     height: calc(100vh - 130px);
     display: flex;
     justify-content: space-between;
@@ -347,4 +346,71 @@ html{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.services{
+    height: 100vh;
+    padding: 0 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #fff;
+    text-align: center;
+    height: 68px;
+    width: 156px;
+    background-color: #0084FF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 38px;
+}
+
+.services-el-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    color: #fff;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.services-el-wrap{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 15px;
+    border-bottom: 1px solid#FFFFFF80;
+    margin-bottom: 27px;
+}
+
+.services-el-wrap:hover .services-el-title{
+    color: #0084FF;
+}
+
+.services-el-wrap:hover .services-el-button{
+    color: #0084FF;
+    background-color: #0084FF;
+    background-image: url(./img/white-arrow.svg);
+}
+
+.services-el-button{
+    height: 78px;
+    width: 78px;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    background-image: url(./img/blue-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -28,6 +28,9 @@
         <div class="section">
             <?php include('./advantages.html') ?>
         </div>
+        <div class="section">
+            <?php include('./services.html') ?>
+        </div>
     </div>
     <!-- <script src="./jquery.js"></script>
     <script src="./slick.min.js"></script> -->
