@@ -9,6 +9,19 @@ $(document).ready(function() {
 });
 
 
-function showServicePop(){
-    document.getElementById('servicePop').style.display = 'flex'
+function isVisible(el){
+    if (el.style.display === "none") {
+        return false
+    }else{
+        return true
+    }
+}
+
+function showServicePop(id){
+    const el = document.getElementById(id)
+    if(isVisible(el)){
+        el.style.display = 'flex'
+    }else{
+        el.style.display = 'none'
+    }
 }

@@ -531,6 +531,7 @@ html{
     padding-bottom: 10px;
     padding-top: 10px;
     display: none;
+    width: 1080px;
 }
 
 .service-pop-title{
@@ -549,7 +550,7 @@ html{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .contact-form-pop{
@@ -612,4 +613,7 @@ html{
 
 .lists-wrap{
     display: flex;
-    margin-top: 20px;}
+    margin-top: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
