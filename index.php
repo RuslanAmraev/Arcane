@@ -31,6 +31,12 @@
         <div class="section">
             <?php include('./services.html') ?>
         </div>
+        <div class="section">
+            <?php include('./trial.html') ?>
+        </div>
+        <div class="section">
+            <?php include('./footer.html') ?>
+        </div>
     </div>
     <!-- <script src="./jquery.js"></script>
     <script src="./slick.min.js"></script> -->
