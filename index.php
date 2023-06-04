@@ -30,6 +30,7 @@
         </div>
         <div class="section">
             <?php include('./services.html') ?>
+            <?php include('./servicepop.html') ?>
         </div>
         <div class="section">
             <?php include('./trial.html') ?>

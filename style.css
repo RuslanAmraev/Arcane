@@ -509,9 +509,107 @@ html{
     text-align: left;
     color: #fff;   
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .footer-contacts-wrap{
     display: flex;
     justify-content: space-between;
 }
+
+.service-pop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding-left: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+.service-pop-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    margin-top: 51px;
+}
+
+.service-pop-text{
+    font-family: 'Muller', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.contact-form-pop{
+    background-color: #0084FF;
+    color: #fff;
+    padding-bottom: 41px;
+}
+
+.contact-form-pop button{
+    background-color: #fff;
+    color: #0084FF;
+    height: 68px;
+}
+
+.contact-form-pop h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.contact-form-pop input{
+    background-color: #0084FF;
+    color: #fff;
+}
+
+.contact-form-pop input::placeholder{
+    color: #fff;
+}
+
+.lists{
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.lists:nth-child(2){
+    margin-left: 40px;
+}
+
+.lists-el{
+    margin: 27px 10px;
+    position: relative;
+}
+
+.lists-el::before{
+    content: '';
+    height: 1px;
+    width: 30px;
+    background-color: #808080;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lists-wrap{
+    display: flex;
+    margin-top: 20px;}

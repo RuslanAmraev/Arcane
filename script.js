@@ -7,3 +7,8 @@ $(document).ready(function() {
     );
     $("#phone").mask("+7(999) 999-9999");
 });
+
+
+function showServicePop(){
+    document.getElementById('servicePop').style.display = 'flex'
+}
