@@ -778,9 +778,9 @@ html{
 
     .advantages-text{
         font-family: 'Muller', sans-serif   ;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 400;
-        line-height: 10px;
+        line-height: 13px;
         letter-spacing: 0em;
         width: 214px;
     }
@@ -823,6 +823,11 @@ html{
         height: 130px;
     }
 
+    .advantage-icon-wrap img{
+        height: 35px;
+        margin: 0 5px;
+    }
+
     .header{
         position: relative;
     }
@@ -838,7 +843,36 @@ html{
     .services{
         padding: 0;
         justify-content: start;
-        margin-top: 18px;
+        margin-top: 50px;
+    }
+
+    .services-el-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        margin-left: 30px;
+    }
+
+    .services-el-button{
+        height: 33px;
+        width: 33px;
+        border-radius: 7px;
+        background-size: 15px;
+        margin-right: 19px;
+    }
+
+    .services-title{
+        margin-left: 18px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        padding: 10px 0;
+        height: auto;
+        width: 105px;
     }
   }
   
