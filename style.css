@@ -625,3 +625,220 @@ html{
     margin-top: 60px;
     margin-left: 20px;
 }
+
+.mobile-header-menu{
+    display: none;
+}
+
+.advantage-box-report-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .header-logo-box .logo{
+        display: none;
+    }
+
+    .wall{
+        display: none;
+    }
+
+    .header-logo-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .container{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .header-logo{
+        height: 24px;
+    }
+
+    .logo-text{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        margin-top: 5px;
+    }
+
+    .header-contacts{
+        display: none;
+    }
+
+    .mobile-header-menu{
+        display: flex;
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+    }
+
+    .main-box{
+        width: 100%;
+        height: 170px;
+        padding: 21px;
+    }
+
+    .main-box-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 51px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 0em;
+    }
+
+    .contact-form{
+        width: 100%;
+        margin-top: 18px;
+        padding: 21px;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .contact-form-title{
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+    .main-box-text{
+        display: none;
+    }
+
+    .contact-form-input:nth-child(2){
+        margin-top: 28px;
+    }
+
+    .contact-form-button{
+        margin-top: 30px;
+    }
+
+    .mobile-header-menu-el:nth-child(1){
+        margin-right: 52px;
+    }
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages-wrap > div:nth-child(2){
+        display: none;
+    }
+
+    .advantages-wrap > div{
+        flex-direction: column;
+    }
+
+    .advantages{
+        margin-top: 18px;
+        height: auto;
+    }
+
+    .advantage-box,
+    .advantage-box-7days,
+    .advantage-box-report,
+    .advantage-box-own-manager,
+    .advantages-wrap,
+    .advantage-box-report-mobile{
+        width: 100%;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .advantage-box{
+        height: 109px;
+        padding: 21px;
+    }
+
+    .advantage-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        width: 248px;
+    }
+
+    .advantages-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+    .advantages-text{
+        font-family: 'Muller', sans-serif   ;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0em;
+        width: 214px;
+    }
+
+    .advantage-box-7days{
+        height: 136px;
+        padding: 21px;
+        margin-top: 18px;
+    }
+
+    .advantage-box-creative{
+        display: none;
+    }
+
+    .advantage-box-report-mobile{
+        display: block;
+    }
+
+    .advantage-box-report-mobile{
+        background-color: #fff;
+        height: 136px;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 22px;
+        padding: 21px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .advantage-box-report-mobile .advantage-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: #4B4B4B;
+    }
+
+    .advantage-box-report-mobile .report-img{
+        height: 130px;
+    }
+
+    .header{
+        position: relative;
+    }
+
+    .switch{
+        display: none;
+    }
+
+    html,body{
+        overflow: visible;
+    }
+
+    .services{
+        padding: 0;
+        justify-content: start;
+        margin-top: 18px;
+    }
+  }
+  
