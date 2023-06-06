@@ -1,13 +1,16 @@
-// $(document).ready(function() {
-// 	$('#pagepiling').pagepiling({
-//             menu: '#switch',
-//             navigation: false,
-//             anchors: ['main', 'advantages', 'services', 'trial', 'footer']
-//         }
-//     );
+$(document).ready(function() {
+    console.log(window.screen.width)
+    if(window.screen.width > 425){
+        $('#pagepiling').pagepiling({
+            menu: '#switch',
+            navigation: false,
+            anchors: ['main', 'advantages', 'services', 'trial', 'footer']
+        }
+    );
+    }
     
-//     $('phone').mask("+7(999) 999-9999")
-// });
+    $('phone').mask("+7(999) 999-9999")
+});
 
 
 function isVisible(el){

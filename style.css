@@ -634,6 +634,10 @@ html{
     display: none;
 }
 
+.advantage-box-creative-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 425px) {
     .header-logo-box .logo{
         display: none;
@@ -844,6 +848,7 @@ html{
         padding: 0;
         justify-content: start;
         margin-top: 50px;
+        height: auto;
     }
 
     .services-el-title{
@@ -873,6 +878,131 @@ html{
         padding: 10px 0;
         height: auto;
         width: 105px;
+    }
+
+    .advantage-box-creative-mobile{
+        display: block;
+        background-color: #fff;
+        padding: 21px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 15px;
+        margin-top: 18px;
+        height: 420px;
+    }
+
+    .advantage-box-creative-mobile .advantages-title{
+        width: 210px;
+    }
+
+    .advantage-box-creative-mobile .advantages-text{
+        width: 100%;
+    }
+
+    .advantage-box-creative-mobile img{
+        width: 100%;
+    }
+
+    .advantage-box-own-manager-mobile{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-top: 18px;
+        padding: 21px;
+    }
+
+    .advantage-box-own-manager-mobile .advantage-get-consult-button-wrap{
+        margin: 12px auto 0 auto;
+    }
+
+    .contact-form-trial{
+        display: none;
+    }
+
+    .trial{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    .trial-content{
+        width: 100%;
+    }
+
+    .trial-title{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        width: 100%;
+    }
+
+    .trial-text{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        margin-top: 20px;
+    }
+
+    .advantage-get-consult-button-wrap{
+        margin-top: 20px;
+    }
+
+    .footer{
+        width: 100%;
+        padding-top: 0;
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .footer-title{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        width: 172px;
+    }
+
+    .footer-images{
+        margin-top: 21px;
+    }
+
+    .footer-contacts{
+        padding: 0 18px;
+    }
+
+    .footer-images-el{
+        width: 40%;
+    }
+
+    .footer-contacts{
+        position:unset;
+    }
+
+    .footer-contacts-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-contacts-tel{
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-box{
+        align-items: center;
+    }
+
+    .footer-social-links{
+        display: flex;
+        justify-content: center;
     }
   }
   
