@@ -426,6 +426,8 @@ html{
 .trial{
     display: flex;
     justify-content: space-between;
+    height: 100vh;
+    align-items: center;
 }
 
 .trial-title{
@@ -639,6 +641,10 @@ html{
 }
 
 .advantage-box-own-manager-mobile{
+    display: none;
+}
+
+.advantage-get-consult-button-wrap{
     display: none;
 }
 
