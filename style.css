@@ -915,6 +915,7 @@ html{
     }
 
     .advantage-box-own-manager-mobile{
+        display: block;
         width: 100%;
         box-sizing: border-box;
         background-color: #fff;
@@ -924,6 +925,7 @@ html{
     }
 
     .advantage-box-own-manager-mobile .advantage-get-consult-button-wrap{
+        display: block;
         margin: 12px auto 0 auto;
     }
 
@@ -936,6 +938,7 @@ html{
         display: flex;
         flex-direction: column;
         margin-top: 40px;
+        height: auto;
     }
     
     .trial-content{
