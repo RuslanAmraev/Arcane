@@ -34,6 +34,16 @@ html{
     z-index: 1000;
 }
 
+.text-logo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 .header-logo-box{
     display: flex;
     font-weight: 500;
@@ -1109,6 +1119,16 @@ html{
         padding-top: 10px;
         padding-bottom: 10px;
         height: auto;
+    }
+
+    .text-logo{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .footer-social-links a:nth-child(1){
+        margin-right: 20px;
     }
   }
   
