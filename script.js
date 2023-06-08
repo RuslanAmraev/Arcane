@@ -47,3 +47,20 @@ function closePops(){
     
     }
 }
+
+let contactButtonFlag = false
+
+function switchContactButton(){
+    if(contactButtonFlag){
+        document.getElementsByClassName('contactButton-links')[0].style.marginTop = "1000px";
+        document.getElementsByClassName('contactButton-links')[0].style.paddingBottom = "0px";
+    }else{
+        document.getElementsByClassName('contactButton-links')[0].style.marginTop = "0";
+        document.getElementsByClassName('contactButton-links')[0].style.paddingBottom = "60px";
+    }
+    contactButtonFlag=!contactButtonFlag
+}
+
+$(window).load(function() {
+    $("body").removeClass("preload");
+  });

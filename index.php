@@ -19,9 +19,10 @@
     <meta name="keywords" content="Таргетированная реклама, контекстная реклама, продвижение, маркетинг, Диджитал агентство">
     <meta name="description" content="Рекламное агенство, таргетированная реклама в Алматы">
 </head>
-<body>
+<body class="preload">
     <?php include('./header.html') ?>
     <div id="pagepiling">
+    <?php include('./contactButton.html') ?>
     <?php include('./switch.html') ?>
         <div class="section">
             <?php include('./main.html') ?>
