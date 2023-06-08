@@ -1,6 +1,6 @@
 $(document).ready(function() {
     console.log(window.screen.width)
-    if(window.screen.width > 500){
+    if(window.screen.width > 600){
         $('#pagepiling').pagepiling({
             menu: '#switch',
             navigation: false,
