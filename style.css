@@ -82,7 +82,7 @@ html{
 
 .main{
     background-color: #232323;
-    height: calc(100vh - 130px);
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -474,13 +474,14 @@ html{
 .footer-images{
     display: flex;
     margin-top: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-images-el{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 51px;
 }
 
 .line{
@@ -972,6 +973,7 @@ html{
         padding-top: 0;
         margin-top: 40px;
         padding-bottom: 0;
+        height: auto;
     }
 
     .footer-title{
@@ -1016,6 +1018,95 @@ html{
     .footer-social-links{
         display: flex;
         justify-content: center;
+    }
+
+    .mobile-header-menu a{
+        
+    }
+    
+    .advantage-get-consult-button-wrap{
+        display: block;
+    }
+
+    .service-pop{
+        position: fixed;
+        flex-direction: column;
+        width: 90%;
+        box-sizing: border-box;
+        height: auto;
+        justify-content: start;
+        align-items: center;
+        padding: 21px;
+    }
+
+    .lists-wrap{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .lists:nth-child(2) .lists-el:nth-child(3){
+        margin-bottom: 0;
+    }
+
+    .lists-el{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        margin-top: 0;
+    }
+
+    .lists:nth-child(2){
+        margin-left: 0;
+    }
+
+    .lists-el:nth-child(1){
+        margin-top: 0;
+    }
+
+    .service-pop-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .service-pop-text{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 16px;
+    }
+
+    .contact-form-pop{
+        padding-bottom: 10px;
+    }
+
+    .contact-form-pop h2{
+       font-size: 22px;
+        font-weight: 800;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .contact-form-pop .contact-form-input{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        width: 100%;
+    }
+
+    .contact-form-pop .contact-form-button{
+        height: 27px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
     }
   }
   
