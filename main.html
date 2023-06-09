@@ -3,10 +3,10 @@
         <h1 class="main-box-title">Достигаем цели бизнеса <br>в цифрах</h1>
         <p class="main-box-text">Запуск таргетированной рекламы</p>
     </div>
-    <div class="contact-form">
+    <form class="contact-form" id="main-form">
         <h2 class="contact-form-title">Начнем работу?</h2>
-        <input class="contact-form-input" type="text" placeholder="Имя">
-        <input required id="phone" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?">
-        <button class="contact-form-button">Отправить заявку</button>
-    </div>
+        <input class="contact-form-input" type="text" placeholder="Имя" name="name">
+        <input required id="phone" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" name="phone">
+        <button class="contact-form-button" type="submit">Отправить заявку</button>
+    </form>
 </main>

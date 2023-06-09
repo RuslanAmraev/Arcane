@@ -510,17 +510,11 @@ html{
 
 .line{
     height: 1px;
-    width: 100%;
+    width: 95%;
     background-color: #909090;
     margin-bottom: 42px;
-}
-
-.footer-contacts{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 65px;
-    padding: 0 152px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-contacts-tel{
@@ -607,6 +601,13 @@ html{
     line-height: 29px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+.pop-close-button{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
 }
 
 .contact-form-pop input{
@@ -720,6 +721,10 @@ html{
     border-radius: 50px;
     cursor: pointer;
     z-index: 3;
+}
+
+.footer-social-links-el:first-child{
+    margin-right: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1091,6 +1096,7 @@ html{
     .footer-social-links{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .mobile-header-menu a{
@@ -1192,6 +1198,14 @@ html{
 
     .footer-social-links a:nth-child(1){
         margin-right: 20px;
+    }
+
+    .pop-close-button{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        left: auto;
+        cursor: pointer;
     }
   }
   
