@@ -12,18 +12,22 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 
 // Извлечение UTM-меток из URL
-$utm_source = $_GET['utm_source'] ?? '';
-$utm_medium = $_GET['utm_medium'] ?? '';
-$utm_campaign = $_GET['utm_campaign'] ?? '';
+$utm_source = $_POST['utm_source'] ?? '';
+$utm_medium = $_POST['utm_medium'] ?? '';
+$utm_campaign = $_POST['utm_campaign'] ?? '';
+$utm_content = $_POST['utm_content'] ?? '';
+$utm_term = $_POST['utm_term'] ?? '';
 
 // Формирование текста сообщения
 $text = "Новая заявка от пользователя:\n\n";
 $text .= "Имя: " . $name . "\n";
 $text .= "Номер: " . $phone . "\n";
-$text .= "UTM-метки:\n";
+$text .= "_____UTM_____-метки:\n";
 $text .= "Источник: " . $utm_source . "\n";
 $text .= "Канал: " . $utm_medium . "\n";
 $text .= "Кампания: " . $utm_campaign . "\n";
+$text .= "Контент: " . $utm_content . "\n";
+$text .= "Терм: " . $utm_term . "\n";
 
 // Формирование URL для отправки запроса к Telegram API
 $url = "https://api.telegram.org/bot" . $token . "/sendMessage";

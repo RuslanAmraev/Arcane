@@ -75,11 +75,17 @@ $(window).load(function() {
         var utm_source = urlParams.get('utm_source') || '';
         var utm_medium = urlParams.get('utm_medium') || '';
         var utm_campaign = urlParams.get('utm_campaign') || '';
+        var utm_content = urlParams.get('utm_content') || '';
+        var utm_term = urlParams.get('utm_term') || '';
 
         var form_data = $(this).serialize(); // Собираем все данные из формы
         form_data += '&utm_source=' + encodeURIComponent(utm_source);
         form_data += '&utm_medium=' + encodeURIComponent(utm_medium);
         form_data += '&utm_campaign=' + encodeURIComponent(utm_campaign);
+        form_data += '&utm_content=' + encodeURIComponent(utm_content);
+        form_data += '&utm_term=' + encodeURIComponent(utm_term);
+
+        console.log(form_data)
 
         $.ajax({
             type: "POST",
