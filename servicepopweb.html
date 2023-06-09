@@ -19,12 +19,12 @@
             </ul>
         </div>
     </div>
-    <div class="contact-form contact-form-pop">
+    <form class="contact-form contact-form-pop" id="web-pop-form">
         <h2 class="contact-form-title">Заказать услугу</h2>
-        <input class="contact-form-input" type="text" placeholder="Имя">
-        <input required id="phone-trial3" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?">
-        <button class="contact-form-button">Отправить заявку</button>
-    </div>
+        <input class="contact-form-input" type="text" placeholder="Имя" name="name">
+        <input required id="phone-trial3" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" name="phone">
+        <button class="contact-form-button" type="submit">Отправить заявку</button>
+    </form>
     <div class="pop-close-button" onclick="closePops()">
         <img class="pop-close-button-img" src="./img/Close Icon.svg" alt="x">
     </div>
