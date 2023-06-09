@@ -670,10 +670,6 @@ html{
     display: none;
 }
 
-.advantage-get-consult-button-wrap{
-    display: none;
-}
-
 .contactButton{
     position: fixed;
     right: 30px;
@@ -1206,6 +1202,10 @@ html{
         right: 25px;
         left: auto;
         cursor: pointer;
+    }
+
+    .advantage-get-consult-button-wrap{
+        display: none;
     }
   }
   

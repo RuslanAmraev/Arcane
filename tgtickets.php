@@ -1,44 +1,56 @@
 <?php
 // Замените <TOKEN> на токен вашего Telegram-бота
-$token = 'AAGfM7FwibuC9IyqnnBv4bd9_rYDbkhDwVc';
-
+$token = '6122858867:AAGfM7FwibuC9IyqnnBv4bd9_rYDbkhDwVc';
 // Замените <CHAT_IDS> на массив с ID чатов, в которые нужно отправить сообщение
 $chat_ids = array(
+    '484297830', //Ras
     '424310757', //Rus
-    '484297830' //Ras
 );
 
 // Получение данных из формы
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 
+// Извлечение UTM-меток из URL
+$utm_source = $_GET['utm_source'] ?? '';
+$utm_medium = $_GET['utm_medium'] ?? '';
+$utm_campaign = $_GET['utm_campaign'] ?? '';
+
 // Формирование текста сообщения
 $text = "Новая заявка от пользователя:\n\n";
 $text .= "Имя: " . $name . "\n";
 $text .= "Номер: " . $phone . "\n";
+$text .= "UTM-метки:\n";
+$text .= "Источник: " . $utm_source . "\n";
+$text .= "Канал: " . $utm_medium . "\n";
+$text .= "Кампания: " . $utm_campaign . "\n";
 
 // Формирование URL для отправки запроса к Telegram API
 $url = "https://api.telegram.org/bot" . $token . "/sendMessage";
 
-$options = array(
-    'http' => array(
-        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-        'method'  => 'POST',
-        'content' => http_build_query(array('text' => $text))
-    )
-);
-
 foreach ($chat_ids as $chat_id) {
-    $options['http']['content'] .= "&chat_id=" . urlencode($chat_id);
+    $data = array(
+        'chat_id' => $chat_id,
+        'text' => $text
+    );
+
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
     $context  = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
 
     if ($result === false) {
         // Обработка ошибки при отправке запроса
-        echo "Ошибка при отправке сообщения в Telegram для чата ID: " . $chat_id . "\n";
+        echo "Ошибка при отправке сообщения в Telegram для чата с ID: " . $chat_id . "<br>";
     } else {
         // Успешная отправка сообщения
-        echo "Сообщение успешно отправлено в Telegram для чата ID: " . $chat_id . "\n";
+        echo "Сообщение успешно отправлено в Telegram для чата с ID: " . $chat_id . "<br>";
     }
 }
 ?>

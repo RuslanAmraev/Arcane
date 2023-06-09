@@ -66,21 +66,31 @@ $(window).load(function() {
   });
 
 
- function tgTicketsListener(id){
-    $(id).submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+  function tgTicketsListener(id) {
+    $(id).submit(function (e) {
         e.preventDefault();
-         var form_data = $(this).serialize(); // Собираем все данные из формы
-         $.ajax({
-             type: "POST", // Метод отправки
-             url: "./tgtickets.php", // Путь до php файла отправителя
-             data: form_data,
-             success: function () {
-                 // Код в этом блоке выполняется при успешной отправке сообщения
-                 alert("Ваше сообщение отправлено!");
-             }
-         });
-     });
- }
+
+        // Извлечение UTM-меток из URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var utm_source = urlParams.get('utm_source') || '';
+        var utm_medium = urlParams.get('utm_medium') || '';
+        var utm_campaign = urlParams.get('utm_campaign') || '';
+
+        var form_data = $(this).serialize(); // Собираем все данные из формы
+        form_data += '&utm_source=' + encodeURIComponent(utm_source);
+        form_data += '&utm_medium=' + encodeURIComponent(utm_medium);
+        form_data += '&utm_campaign=' + encodeURIComponent(utm_campaign);
+
+        $.ajax({
+            type: "POST",
+            url: "./tgtickets.php",
+            data: form_data,
+            success: function () {
+                alert("Ваше сообщение отправлено!");
+            }
+        });
+    });
+}
 
  tgTicketsListener('#main-form')
  tgTicketsListener('#trial-form')
