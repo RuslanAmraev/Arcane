@@ -5,6 +5,7 @@ $token = '6122858867:AAGfM7FwibuC9IyqnnBv4bd9_rYDbkhDwVc';
 $chat_ids = array(
     '484297830', //Ras
     '424310757', //Rus
+    '2010895199', //Rauf
 );
 
 // Получение данных из формы
