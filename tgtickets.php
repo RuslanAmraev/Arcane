@@ -20,6 +20,8 @@ $utm_campaign = $_POST['utm_campaign'] ?? '';
 $utm_content = $_POST['utm_content'] ?? '';
 $utm_term = $_POST['utm_term'] ?? '';
 
+$form_id = $_POST['form_id'] ?? '';
+
 // Формирование текста сообщения
 $text = "Новая заявка от пользователя:\n\n";
 $text .= "Имя: " . $name . "\n";
@@ -30,6 +32,7 @@ $text .= "Канал: " . $utm_medium . "\n";
 $text .= "Кампания: " . $utm_campaign . "\n";
 $text .= "Контент: " . $utm_content . "\n";
 $text .= "Терм: " . $utm_term . "\n";
+$text .= "Форма: " . $form_id . "\n";
 
 // Формирование URL для отправки запроса к Telegram API
 $url = "https://api.telegram.org/bot" . $token . "/sendMessage";

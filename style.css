@@ -749,7 +749,6 @@ html{
     text-align: center;
     margin-top: 10px;
     overflow: hidden;
-    height: 0;
     transition: .5s;
 }
 
@@ -762,6 +761,78 @@ html{
     line-height: 20px;
     text-decoration: none;
     cursor: pointer;
+}
+
+.thankyou{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    z-index: 99999;
+    background-color: #232323;
+}
+
+.thankyou-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 69px;
+    width: 580px;
+}
+
+.thankyou-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    width: 580px;
+    margin-top: 23px;
+}
+
+.thankyou-content{
+    background-color: #0084FF;
+    width: 622px;
+    padding: 29px 45px;
+    border-radius: 30px;
+}
+
+.thankyou-other{
+    background-color: #fff;
+    color: #0084FF;
+    border-radius: 30px;
+    padding: 29px 45px;
+}
+
+.thankyou-other-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 302px;
+}
+
+.finger{
+    transform: rotate(90deg);
+}
+
+.thankyou-other img{
+    height: 60px;
+}
+
+.thankyou-other-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.thankyou-footer-box{
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1026,10 +1097,10 @@ html{
         width: 100%;
     }
 
-    .advantage-box-creative-mobile img{
+    .advantage-box-creative-mobile img {
         width: 100%;
+        height: 560px;
     }
-
     .advantage-box-own-manager-mobile{
         display: block;
         width: 100%;
@@ -1059,6 +1130,7 @@ html{
     
     .trial-content{
         width: 100%;
+        align-items: center;
     }
 
     .trial-title{
@@ -1067,7 +1139,6 @@ html{
         font-weight: 700;
         line-height: 36px;
         letter-spacing: 0em;
-        width: 100%;
     }
 
     .trial-text{
@@ -1141,10 +1212,6 @@ html{
         
     }
     
-    .advantage-get-consult-button-wrap{
-        display: block;
-    }
-
     .service-pop{
         position: fixed;
         flex-direction: column;
@@ -1248,6 +1315,29 @@ html{
 
     .advantage-get-consult-button-wrap{
         display: none;
+    }
+
+    .mobile-get-consult{
+    display: flex;
+   }
+  }
+  
+
+  @media screen and (max-width:  450px) {
+    .advantage-box-creative-mobile img {
+        width: 100%;
+        height: auto;
+    }
+  }
+ 
+  @media screen and (max-width:  370px) {
+    .advantage-get-consult-button-wrap {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .advantage-box-7days {
+        height: 170px;
     }
   }
   

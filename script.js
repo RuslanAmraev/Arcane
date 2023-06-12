@@ -14,10 +14,9 @@ $(document).ready(function() {
     $('#phone-target-pop').mask("+7(999) 999-9999")
     $('#phone-web-pop').mask("+7(999) 999-9999")
     $('#phone-trial').mask("+7(999) 999-9999")
-    $('#contact-form').mask("+7(999) 999-9999")
+    $('#contact-phone').mask("+7(999) 999-9999")
     $('#main-phone').mask("+7(999) 999-9999")
     $('#main-form').mask("+7(999) 999-9999")
-    $('#contact-form').mask("+7(999) 999-9999")
 });
     
 
@@ -85,13 +84,22 @@ let headerMenuFlag = false
 
 function switchheaderMenu(){
     if(headerMenuFlag){
-        document.getElementById('headerMenu').style.height = "0px";
-        setTimeout(()=>{document.getElementById('headerMenu').style.display = "none";;}, 5000)
+        document.getElementById('headerMenu').style.display = "none";
     }else{
         document.getElementById('headerMenu').style.display = "flex";
-        setTimeout(()=>{document.getElementById('headerMenu').style.height = "auto";}, 1000)
     }
     headerMenuFlag=!headerMenuFlag
+}
+
+let thankYouFlag = false
+
+function switchThankYou(){
+    if(thankYouFlag){
+        document.getElementById('thankYou').style.display = "none";
+    }else{
+        document.getElementById('thankYou').style.display = "flex";
+    }
+    thankYouFlag=!thankYouFlag
 }
 
 $(window).load(function() {
@@ -117,15 +125,15 @@ $(window).load(function() {
         form_data += '&utm_campaign=' + encodeURIComponent(utm_campaign);
         form_data += '&utm_content=' + encodeURIComponent(utm_content);
         form_data += '&utm_term=' + encodeURIComponent(utm_term);
-
-        console.log(form_data)
+       
+        form_data += '&form_id=' + e.target.id
 
         $.ajax({
             type: "POST",
             url: "./tgtickets.php",
             data: form_data,
             success: function () {
-                alert("Ваше сообщение отправлено!");
+                switchThankYou()
             }
         });
     });

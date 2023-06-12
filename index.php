@@ -43,6 +43,7 @@
         <div class="section">
             <?php include('./footer.html') ?>
         </div>
+        <?php include('./ThankYou.html') ?>
     </div>
     <!-- <script src="./jquery.js"></script>
     <script src="./slick.min.js"></script> -->
