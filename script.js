@@ -14,6 +14,10 @@ $(document).ready(function() {
     $('#phone-target-pop').mask("+7(999) 999-9999")
     $('#phone-web-pop').mask("+7(999) 999-9999")
     $('#phone-trial').mask("+7(999) 999-9999")
+    $('#contact-form').mask("+7(999) 999-9999")
+    $('#main-phone').mask("+7(999) 999-9999")
+    $('#main-form').mask("+7(999) 999-9999")
+    $('#contact-form').mask("+7(999) 999-9999")
 });
     
 

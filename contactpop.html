@@ -1,8 +1,8 @@
 <div class="contactpop" id="contactpop" onclick="switchContactPop(event)">
-    <form class="contact-form" id="main-form" onclick="event.stopPropagation()">
+    <form class="contact-form" id="contact-form" onclick="event.stopPropagation()">
         <h2 class="contact-form-title">Начнем работу?</h2>
         <input class="contact-form-input" type="text" placeholder="Имя" name="name">
-        <input required id="phone" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" name="phone">
+        <input required id="contact-phone" class="contact-form-input" type="phone" placeholder="Номер телефона" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" name="phone">
         <button class="contact-form-button" type="submit">Отправить заявку</button>
     </form>
 </div>
