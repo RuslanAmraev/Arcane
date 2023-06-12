@@ -1,19 +1,26 @@
 <Header class="header container">
-    <div class="header-logo-box">
-        <img class="header-logo logo" src="./img/logo.png" alt="A">
-        <!-- <img class="header-logo" src="./img/Arcane.png" alt="Arcane-text-logo"> -->
-        <h2 class="text-logo">Arcane</h2>
-        <div class="wall"></div>
-        <p class="logo-text">Strategic and Operational Agency</p>
+    <div class="flex jcsb">
+        <div class="header-logo-box">
+            <img class="header-logo logo" src="./img/logo.png" alt="A">
+            <!-- <img class="header-logo" src="./img/Arcane.png" alt="Arcane-text-logo"> -->
+            <h2 class="text-logo">Arcane</h2>
+            <div class="wall"></div>
+            <p class="logo-text">Strategic and Operational Agency</p>
+        </div>
+        <div class="header-contacts">
+            <p>г.Алматы</p>
+            <a href="tel:77073282438">+7 707 328 24 38</a>
+        </div>
+        <div class="mobile-header-menu">
+            <a href="tel:77073282438">
+                <img class="mobile-header-menu-el" src="./img/telephone-handle-silhouette.svg" alt="telephone-handle">
+            </a>
+            <img onclick="switchheaderMenu()" class="mobile-header-menu-el" src="./img/menu-icon.svg" alt="menu-icon">
+        </div>
     </div>
-    <div class="header-contacts">
-        <p>г.Алматы</p>
-        <a href="tel:77073282438">+7 707 328 24 38</a>
-    </div>
-    <div class="mobile-header-menu">
-        <a href="tel:77073282438">
-            <img class="mobile-header-menu-el" src="./img/telephone-handle-silhouette.svg" alt="telephone-handle">
-        </a>
-        <img class="mobile-header-menu-el" src="./img/menu-icon.svg" alt="menu-icon">
+    <div id="headerMenu" class="headerMenu">
+        <a href="#services" class="headerMenu_link">Услуги</a>
+        <a href="#advantages" class="headerMenu_link">Преимущества</a>
+        <a href="#contacts" class="headerMenu_link">Контакты</a>
     </div>
 </Header>

@@ -24,6 +24,7 @@
     <div id="pagepiling">
     <?php include('./contactButton.html') ?>
     <?php include('./switch.html') ?>
+    <?php include('./contactpop.html') ?>
         <div class="section">
             <?php include('./main.html') ?>
         </div>

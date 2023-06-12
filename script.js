@@ -9,8 +9,13 @@ $(document).ready(function() {
     );
     }
     
-    $('phone').mask("+7(999) 999-9999")
+    $('#phone').mask("+7(999) 999-9999")
+    $('#phone-context-pop').mask("+7(999) 999-9999")
+    $('#phone-target-pop').mask("+7(999) 999-9999")
+    $('#phone-web-pop').mask("+7(999) 999-9999")
+    $('#phone-trial').mask("+7(999) 999-9999")
 });
+    
 
 
 function isVisible(el){
@@ -55,10 +60,34 @@ function switchContactButton(){
         document.getElementsByClassName('contactButton-links')[0].style.marginTop = "1000px";
         document.getElementsByClassName('contactButton-links')[0].style.paddingBottom = "0px";
     }else{
-        document.getElementsByClassName('contactButton-links')[0].style.marginTop = "0";
+        document.getElementsByClassName('contactButton-links')[0].style.marginTop = "0px";
         document.getElementsByClassName('contactButton-links')[0].style.paddingBottom = "60px";
     }
     contactButtonFlag=!contactButtonFlag
+}
+
+let contactPopFlag = false
+
+function switchContactPop(event){
+    if(contactPopFlag){
+        document.getElementById('contactpop').style.display = "none";
+    }else{
+        document.getElementById('contactpop').style.display = "flex";
+    }
+    contactPopFlag=!contactPopFlag
+}
+
+let headerMenuFlag = false
+
+function switchheaderMenu(){
+    if(headerMenuFlag){
+        document.getElementById('headerMenu').style.height = "0px";
+        setTimeout(()=>{document.getElementById('headerMenu').style.display = "none";;}, 5000)
+    }else{
+        document.getElementById('headerMenu').style.display = "flex";
+        setTimeout(()=>{document.getElementById('headerMenu').style.height = "auto";}, 1000)
+    }
+    headerMenuFlag=!headerMenuFlag
 }
 
 $(window).load(function() {
