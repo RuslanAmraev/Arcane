@@ -835,6 +835,11 @@ html{
     margin-top: 100px;
 }
 
+.footer-politic-link{
+    font-weight: normal !important;
+    font-size: 17px !important;
+}
+
 @media screen and (max-width: 600px) {
     .header-logo-box .logo{
         display: none;
