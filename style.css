@@ -770,7 +770,7 @@ html{
     top: 0;
     bottom: 0;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;

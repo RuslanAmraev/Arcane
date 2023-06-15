@@ -91,15 +91,8 @@ function switchheaderMenu(){
     headerMenuFlag=!headerMenuFlag
 }
 
-let thankYouFlag = false
-
 function switchThankYou(){
-    if(thankYouFlag){
-        document.getElementById('thankYou').style.display = "none";
-    }else{
-        document.getElementById('thankYou').style.display = "flex";
-    }
-    thankYouFlag=!thankYouFlag
+    location.href = 'https://arcane.kz/thankyou';
 }
 
 $(window).load(function() {
