@@ -840,7 +840,64 @@ html{
     font-size: 17px !important;
 }
 
+.thankyou-content-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
+    .thankyou-content-wrap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thankyou-content{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .thankyou-other{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    .thankyou-title{
+        font-size: 57px;
+        font-weight: 700;
+        line-height: 57px;
+        margin: 0;
+        width: auto;
+    }
+
+    .thankyou-text{
+        font-size: 18px;
+        line-height: 18px;
+        width: auto;
+    }
+
+    .thankyou-other-text{
+        font-size: 35px;
+        line-height: 35px;
+        width: auto;
+    }
+
+    .thankyou-footer-box{
+        margin: 0;
+    }
+
+    .thankyou-other-links{
+        justify-content: start;
+    }
+
+    .finger{
+        margin-right: auto;
+    }
+
+    .thankyou-other-links a{
+        margin: 0 10px;
+    }
+
     .header-logo-box .logo{
         display: none;
     }
